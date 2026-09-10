@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Strategic Venture Development — 从机会识别、商业验证、结构设计到项目推进。" />
+  <title>Strategic Venture Development</title>
+  <style>
+    :root{--ink:#101828;--muted:#667085;--line:#E4E7EC;--soft:#F8FAFC;--accent:#17365D;--accent2:#8A5A00;--white:#fff;--max:1180px}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.65} a{color:inherit;text-decoration:none}.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+    nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);background:rgba(255,255,255,.86);border-bottom:1px solid rgba(228,231,236,.9)}.navin{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.08em;font-size:13px}.mark{width:30px;height:30px;border:1px solid var(--ink);display:grid;place-items:center;font-size:12px;font-weight:800}.navlinks{display:flex;gap:24px;font-size:14px;color:#475467}.navlinks a:hover{color:var(--ink)}
+    .hero{padding:108px 0 86px;border-bottom:1px solid var(--line)}.eyebrow{text-transform:uppercase;letter-spacing:.16em;color:var(--accent2);font-weight:700;font-size:12px;margin-bottom:22px}h1{margin:0;font-size:clamp(46px,7.5vw,92px);line-height:.96;letter-spacing:-.055em;max-width:1040px;font-weight:760}h1 .light{font-weight:430;color:#475467}.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;margin-top:54px;align-items:end}.lede{font-size:22px;line-height:1.55;max-width:720px;color:#344054;margin:0}.hero-note{border-left:3px solid var(--accent);padding-left:18px;color:var(--muted);font-size:14px}
+    .section{padding:92px 0;border-bottom:1px solid var(--line)}.section-head{display:grid;grid-template-columns:220px 1fr;gap:56px;margin-bottom:48px}.kicker{font-size:12px;text-transform:uppercase;letter-spacing:.15em;font-weight:700;color:var(--muted);padding-top:7px}h2{margin:0;font-size:clamp(32px,4.5vw,58px);line-height:1.08;letter-spacing:-.035em;font-weight:700;max-width:860px}.intro{margin-top:20px;font-size:18px;color:#475467;max-width:760px}
+    .four{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}.stage{background:#fff;padding:30px;min-height:250px}.num{font-size:12px;color:var(--accent2);font-weight:800;letter-spacing:.14em}.stage h3{font-size:22px;margin:22px 0 8px}.stage p{color:var(--muted);font-size:14px;margin:0}.stage .result{margin-top:28px;padding-top:18px;border-top:1px solid var(--line);font-weight:650;color:#344054;font-size:14px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid var(--line);padding:28px;min-height:245px;transition:.25s ease;background:#fff}.card:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(16,24,40,.06)}.card h3{font-size:21px;margin:0 0 14px}.card p{font-size:14px;color:var(--muted);margin:0 0 12px}.tag{display:inline-block;margin-top:16px;padding:6px 9px;background:var(--soft);font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#475467}
+    .manifesto{background:var(--ink);color:#fff;padding:96px 0}.manifesto h2{max-width:980px}.manifesto .intro{color:#D0D5DD}.manifesto-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;margin-top:50px}.manifesto-block{border-top:1px solid #344054;padding-top:22px}.manifesto-block h3{font-size:20px;margin:0 0 12px}.manifesto-block p{color:#98A2B3;font-size:15px;margin:0}
+    .cases{display:grid;grid-template-columns:1fr 1fr;gap:20px}.case{border:1px solid var(--line);padding:30px;background:linear-gradient(180deg,#fff,#FBFCFD)}.case small{display:block;color:var(--accent2);text-transform:uppercase;letter-spacing:.13em;font-weight:800;margin-bottom:18px}.case h3{font-size:25px;margin:0 0 13px;line-height:1.25}.case p{color:var(--muted);font-size:14px;margin:0}.flow{margin-top:26px;color:#344054;font-weight:650;font-size:13px;border-top:1px solid var(--line);padding-top:18px}
+    .model{display:grid;grid-template-columns:1fr 1fr;gap:20px}.modelbox{padding:34px;border:1px solid var(--line)}.modelbox h3{font-size:23px;margin:0 0 18px}.modelbox ul{padding-left:20px;margin:0;color:#475467}.modelbox li{margin:9px 0}.quote{font-size:clamp(30px,4vw,50px);line-height:1.15;letter-spacing:-.035em;font-weight:650;max-width:920px;margin:0}.quote em{font-style:normal;color:var(--accent)}
+    .cta{padding:96px 0 110px}.cta-box{border:1px solid var(--line);padding:48px;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:end}.cta h2{font-size:46px}.cta p{color:var(--muted);font-size:16px;max-width:680px}.button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 20px;background:var(--ink);color:#fff;font-size:14px;font-weight:700;letter-spacing:.02em;transition:.2s ease}.button:hover{background:var(--accent)}.contactnote{font-size:12px;color:var(--muted);margin-top:12px}footer{border-top:1px solid var(--line);padding:26px 0 36px;color:#667085;font-size:12px}.foot{display:flex;justify-content:space-between;gap:20px}
+    @media(max-width:900px){.navlinks{display:none}.hero{padding-top:76px}.hero-grid,.section-head,.manifesto-grid,.cta-box,.model{grid-template-columns:1fr}.four{grid-template-columns:1fr 1fr}.cards{grid-template-columns:1fr}.cases{grid-template-columns:1fr}.section-head{gap:18px}}
+    @media(max-width:560px){.wrap{padding:0 18px}.four{grid-template-columns:1fr}.hero{padding:62px 0}.section{padding:64px 0}.stage{min-height:0}.cta-box{padding:28px}.foot{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <nav><div class="wrap navin"><a class="brand" href="#top"><span class="mark">SV</span><span>STRATEGIC VENTURE DEVELOPMENT</span></a><div class="navlinks"><a href="#what">What We Do</a><a href="#method">Method</a><a href="#work">Selected Work</a><a href="#model">Engagement</a></div></div></nav>
+  <main id="top">
+    <section class="hero"><div class="wrap"><div class="eyebrow">Independent Venture Development Practice</div><h1>We turn <span class="light">complex opportunities</span><br/>into executable ventures.</h1><div class="hero-grid"><p class="lede">我们专注于技术、产业与资本交叉领域的战略项目开发。从机会识别、商业验证、结构设计，到合作方、专业机构与资本的组织，把尚未成型的项目推进为<strong>可执行、可合作、可融资</strong>的商业机会。</p><div class="hero-note">不是传统FA。<br/>不是只交付PPT的咨询。<br/>也不是海外销售外包。<br/><br/>我们更像 <strong>Project Developer</strong>：定义项目、组织资源、设计结构并推动关键节点发生。</div></div></div></section>
+    <section class="section" id="what"><div class="wrap"><div class="section-head"><div class="kicker">What we do</div><div><h2>介入那些“还不能直接交易”的机会。</h2><p class="intro">很多项目不是缺投资人，而是还没有形成资本、产业方或合作伙伴能够判断和接手的结构。我们通常在这一阶段进入。</p></div></div><div class="cards">
+      <div class="card"><h3>Venture Development</h3><p>科研成果产业化、新业务孵化、Spin-off / NewCo、商业化验证与早期公司搭建。</p><span class="tag">Technology → Venture</span></div>
+      <div class="card"><h3>Strategic Projects</h3><p>企业第二增长曲线、新赛道进入、产业合作、高校—企业合作以及复杂机构型项目。</p><span class="tag">Opportunity → Project</span></div>
+      <div class="card"><h3>Cross-border Development</h3><p>海外机会验证、国际科研/产业合作、合作结构设计、本地生态与专业伙伴组织。</p><span class="tag">Domestic → Global</span></div>
+      <div class="card"><h3>Capital Readiness</h3><p>融资准备、Validation Financing、交易结构、Investor Readiness与专业FA/机构协同。</p><span class="tag">Project → Financeable</span></div>
+      <div class="card"><h3>Partner Assembly</h3><p>把科学家、企业、大学、律师、顾问、产业方、管理人才与资本放到同一个项目框架里。</p><span class="tag">Fragmented → Coordinated</span></div>
+      <div class="card"><h3>Execution PMO</h3><p>围绕关键Gate推进项目：明确责任人、交付物、资源依赖、Go / No-Go与下一轮资本需求。</p><span class="tag">Strategy → Execution</span></div>
+    </div></div></section>
+    <section class="section" id="method"><div class="wrap"><div class="section-head"><div class="kicker">Our method</div><div><h2>Identify · Validate · Structure · Execute</h2><p class="intro">我们不从“卖哪项服务”出发，而从“项目现在处于哪个阶段”出发。</p></div></div><div class="four">
+      <div class="stage"><div class="num">01 / IDENTIFY</div><h3>机会识别</h3><p>识别技术、市场、资本与机构资源之间未被组织起来的机会。</p><div class="result">输出：值得做什么</div></div>
+      <div class="stage"><div class="num">02 / VALIDATE</div><h3>商业验证</h3><p>判断技术、IP、市场、Founder、合作方与资本路径是否真正成立。</p><div class="result">输出：这件事能不能做</div></div>
+      <div class="stage"><div class="num">03 / STRUCTURE</div><h3>结构设计</h3><p>设计公司、交易、融资、合作、跨境与治理结构，使项目具备可执行性。</p><div class="result">输出：应该怎么做</div></div>
+      <div class="stage"><div class="num">04 / EXECUTE</div><h3>项目推进</h3><p>组织专业机构、合作伙伴、产业资源与资本，推动关键节点真正发生。</p><div class="result">输出：把事情做成</div></div>
+    </div></div></section>
+    <section class="manifesto"><div class="wrap"><div class="kicker" style="color:#98A2B3">How we think</div><h2>复杂项目的问题，往往不是“缺资源”，而是资源尚未被设计成一个系统。</h2><p class="intro">我们的核心能力不是“什么都自己做”，而是判断一个项目此刻缺什么，找到正确的人，并让不同参与方能够围绕同一个结果协同。</p><div class="manifesto-grid">
+      <div class="manifesto-block"><h3>Developer, not vendor.</h3><p>我们不把法律、审计、实验、当地销售等专业工作内包。需要持牌或专业执行的环节，由相应机构承担。</p></div>
+      <div class="manifesto-block"><h3>Capital is a module, not the product.</h3><p>融资只是项目开发的一部分。很多时候，我们介入时项目甚至还没到可以正式融资的阶段。</p></div>
+      <div class="manifesto-block"><h3>Cross-border architecture, not overseas outsourcing.</h3><p>我们负责设计和组织市场进入、科研合作、公司与交易结构，而不是充当客户的海外销售部门。</p></div>
+      <div class="manifesto-block"><h3>Kill bad ideas early.</h3><p>真正专业的项目开发，不是把所有机会都包装成故事，而是在早期用最低成本识别不可行路径。</p></div>
+    </div></div></section>
+    <section class="section" id="work"><div class="wrap"><div class="section-head"><div class="kicker">Selected work</div><div><h2>我们最擅长的，是非标准化项目。</h2><p class="intro">以下为典型项目形态示例，具体客户与项目名称可根据保密要求匿名处理。</p></div></div><div class="cases">
+      <div class="case"><small>Biotech Venture Building</small><h3>高校科研成果 → 可融资生物医药资产</h3><p>从科研成果、候选分子与Founder团队出发，完成Lead Asset收敛、IP/FTO协调、Validation Capital设计、海外科研合作和机构融资准备。</p><div class="flow">Science → Validation → Lead Asset → Clean IP → Financeable Company</div></div>
+      <div class="case"><small>China–US Venture Architecture</small><h3>中国技术团队 → 美国第二开发与融资中心</h3><p>评估科研合作、产业生态、公司架构、政策资本与美国管理团队，形成可验证的跨境开发路径，而非简单“注册美国公司”。</p><div class="flow">China Discovery → US Validation → Local Ecosystem → Institutional Capital</div></div>
+      <div class="case"><small>University–Industry Development</small><h3>高校平台 → 企业合作与产业项目</h3><p>围绕高校科研、继续教育、产业合作、研究中心和横向项目，把分散资源设计成具备合作主体、商业逻辑与落地路径的项目。</p><div class="flow">Academic Capability → Project Structure → Industry Partner → Contract</div></div>
+      <div class="case"><small>Strategic New Business</small><h3>企业新机会 → 第二增长曲线</h3><p>从市场与政策窗口出发，对新赛道、新业务和跨境机会进行筛选、验证和合作结构设计，推进到可投、可签、可执行状态。</p><div class="flow">Opportunity → Feasibility → Partnership → Launch</div></div>
+    </div></div></section>
+    <section class="section" id="model"><div class="wrap"><div class="section-head"><div class="kicker">Engagement model</div><div><h2>我们按项目阶段合作，而不是卖一张服务菜单。</h2></div></div><div class="model">
+      <div class="modelbox"><h3>典型合作方式</h3><ul><li><strong>Diagnostic / Feasibility</strong> — 固定项目费</li><li><strong>Validation</strong> — 项目制费用</li><li><strong>Venture Development</strong> — Retainer / PMO</li><li><strong>Transaction Execution</strong> — 与专业FA、律所、会计师及持牌机构协作</li><li><strong>Long-term Participation</strong> — 在适当项目中讨论长期顾问、管理或股权安排</li></ul></div>
+      <div class="modelbox"><h3>我们通常不承接</h3><ul><li>单纯代写融资BP或“包装项目”</li><li>未经验证就承诺融资</li><li>长期充当海外销售/参展执行外包</li><li>替代律师、审计、技术专家或持牌机构</li><li>没有明确Founder投入与决策机制的无限期免费陪跑</li></ul></div>
+    </div></div></section>
+    <section class="section"><div class="wrap"><p class="quote">“我们不是替客户回答所有问题。<br/>我们的工作，是把一个<em>复杂机会</em>变成一个能够被正确的人共同推进的项目。”</p></div></section>
+    <section class="cta"><div class="wrap"><div class="cta-box"><div><div class="eyebrow">Start with the project</div><h2>先讲项目，不必先买服务。</h2><p>如果你正在面对一个“资源不少、机会很大，但不知道应该从哪里开始”的项目，我们通常会先判断：它现在处于哪个阶段、最关键的风险是什么、下一步应该验证什么。</p></div><div><a class="button" href="mailto:hello@example.com">Discuss a Project →</a><div class="contactnote">将 hello@example.com 替换为你们正式邮箱即可。</div></div></div></div></section>
+  </main>
+  <footer><div class="wrap foot"><div>© 2026 Strategic Venture Development</div><div>Technology · Industry · Capital · Institutions</div></div></footer>
+</body>
+</html>
